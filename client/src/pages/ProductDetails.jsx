@@ -6,7 +6,7 @@ function ProductDetails({ cartItem, setCartItem }) {
   const [qty, setQty] = useState(1);
   const [product, setProduct] = useState(null);
   const { id } = useParams();
-const REACT_APP_API_URL="http://localhost:3000"
+const REACT_APP_API_URL="https://chatapp1-8hug.onrender.com"
   useEffect(() => {
     fetch(`${REACT_APP_API_URL}/ecommerce/product/${id}`)
       .then((res) => res.json())
