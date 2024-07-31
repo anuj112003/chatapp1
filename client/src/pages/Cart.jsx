@@ -40,7 +40,7 @@ function Cart({ cartItem, setCartItem }) {
     setCartItem(updatedItem)
   }
   //place order
-  const REACT_APP_API_URL="http://localhost:3000"
+  const REACT_APP_API_URL="https://chatapp1-8hug.onrender.com"
   function placeOrder() {
     fetch(`${REACT_APP_API_URL}/ecommerce/orders`, {
       method: 'POST',
